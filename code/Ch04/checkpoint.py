@@ -6,7 +6,7 @@ import pyspark.sql.functions as F
 
 spark = SparkSession.builder.getOrCreate()
 
-DIRECTORY = "./data/broadcast_logs"
+DIRECTORY = "/Volumes/main/dataanalysiswithpyspark/dataanalysiswithpyspark/DataAnalysisWithPythonAndPySpark-Data-trunk/broadcast_logs/BroadcastLogs_2018_Q3_M8_sample.CSV"
 logs = (
     spark.read.csv(
         os.path.join(DIRECTORY, "BroadcastLogs_2018_Q3_M8.CSV"),
